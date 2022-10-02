@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--이미지 태그 <img>
+    1.이미지의 경로를 불러와서 화면에 표출해주는 태그
+    2.컨텐츠가 존재하지 않기 때문에 홀태그 구조를 가지고 있다.!
+    3.가장 중요하게 생각해야하는 속성은 "src"!->source
+    -->
+    <!--
+        나: 나 손흥민 사진을 웹페이지에 보여줘!
+        컴퓨터 : (요구) 손흥민 사진이 어디있어?(사진의위치)
+        =>사진의 위치가 어디인지 알려주는 속성이 src
+    -->
+    <!--
+        파일의 경로는 2가지 존재
+        1. 내가 가지고있는 로컬파일을 제공 (실제 내가 가지고있는사진 제공)
+        2.네트워크를 통해서 제공(CDN) --url(사진을가지고있는서버의주소)
+    -->
+<!--이미지의 경로를 찾는방법
+    1.작업하고있는 폴더(같은폴더)에 있으면 그냥 그 사진이름.확장자
+2.이미지가 어떤 폴더에 들어가 있는 경우에는 폴더명을 명시. 구분자는 "폴더명/"
+3.현재 나(HTML코드)의 경로에서 폴더를 사진이있는 한단계 전으로 나갈때는 "../"
+    두번나갈때는 ../../ (내가있는폴더에서 두번나가서 사진을 찾을게요)
+4.현재 나(HTML코드)를 기준으로 최상위 폴더(메인)로 나갈 때는 맨앞에 아무것도없이 "/"
+-->
+
+    <!--alt 속성은 대체하는 속성-->
+    <img src="../img1.jpg" alt="대충 공유사진">
+    <!--배포하거나 공유할때사용-->
+    <img src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fee%2F29%2F32%2Fee2932e6898ed38d46ed9cc94612b691.jpg&type=ofullfill340_600">
+
+    
+</body>
+</html>
