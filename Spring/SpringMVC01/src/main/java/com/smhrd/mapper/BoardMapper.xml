@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.smhrd.mapper.BoardMapper">
+
+	<!-- sql문 작성 -->
+	<!-- 모든 게시물 가져오기 -->
+	<select id="boardList" resultType="com.smhrd.domain.Board">
+		select * from board
+		<!-- 우리가 채워줄 #중괄호 파라미터값이 없으닌까 parametertype 앟=ㄴ도돼 where idx = #{idx} -->
+	</select>
+
+
+	<!-- 게시글 작성 -->
+	<insert id="boardInsert" parameterType="com.smhrd.domain.Board">
+		insert into board( title,
+		writer, content) values( #{title}, #{writer},
+		#{content})
+	</insert>
+
+	<!-- oracle 버전 -->
+	<!-- <insert id=""> insert into board(idx, title, writer,content) values(board_seq.nextval, 
+		#{title}, #{writer}, #{content}) </insert> -->
+
+	<!-- select할때 executeQuery 썻는데 얘는 ResultSet이라는걸 돌려줬어ㅡㅅ음(표) executeUpdate는 
+		delete, update, insert( 이 3개의 공통점은 db에 저장된 정보가 수정되는거) 할때 썻는데 int를 돌려줬음 -->
+
+	<select id="boardContent" resultType="com.smhrd.domain.Board">
+		select * from board
+		where idx = #{idx}
+	</select>
+	
+	<!-- 넣어야할게 있으닌까 parameterType도 지정 / resultType은 필요없음  그리고 얘를 혼자쓸수없어서 얘랑 연결이 될 메소드 만들어주러가기 그리고 id는 만든 저 메소드명과 동일하게해주기-->
+	<update id = "boardUpdate" parameterType="com.smhrd.domain.Board">
+	    update board
+	    set title = #{title}, content =#{content}
+	    where idx =#{idx}
+	</update>
+	
+
+</mapper>
