@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // 1. 랜덤한 수를 하나 뽑아준다.
+        let random = parseInt(Math.random()*100)+1;
+        console.log(random);
+
+    while(true){
+      
+        // 2. 사용자한테 숫자하나 입력받기
+        let num = parseInt(prompt('숫자를 입력하세요'));
+        
+        //3. 비교시작 => alert창으로띄어주기
+        //      -> 숫자 > 랜덤 '입력한 숫자보다 작은 수 입니다.'
+        //      -> 숫자 < 랜덤  '입력한 숫자보다 큰 수 입니다'
+        //      -> 숫자 = 랜덤 '정답입니다. 축하합니다.'
+        // 이모지 : 윈도우키 + .
+  
+
+        if(num == random){
+            alert('정답입니다! 축하합니당🎉');
+            break;
+        }else if(num < random){
+            alert('입력한 숫자보다 큰 수 입니다.')
+        }else{
+            alert('입력한 숫자보다 작은 수 입니다.');
+        }
+
+    }
+    </script>
+</body>
+</html>

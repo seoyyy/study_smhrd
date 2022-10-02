@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--연결해주는 작업은 제일먼저해줘야하서 head태그안에 써줄거임-->
+    <script src ="./ex01외부방식.js"></script>
+</head>
+<body>
+    
+
+    <!--내부 방식 : head 혹은 body영역에 script 태그 안에 직접작성 (말그대로 문서 내부에 적는다는뜻)-->
+    <!--현업에서 사용거의 안함-->
+    <script>
+        console.log('내부방식');
+    </script>
+
+    <!-- 인라인 방식 : 라인안에(태그안에) 적어주는 방식 -태그에 직접 기능을 넣어줄때 사용
+    현업에서 1%로 사용함-->
+    <button onmouseenter="alert('마우스 올림!')">인라인방식</button> <!--버튼위에 마우스 올렷을 ㄸㅐ ''안에잇는거실행시켜주세요-->
+
+    <!-- 외부방식 : 외부의(현재파일과 다른 파일) js파일 안에 작성후 연결
+        버튼을 클릭했을때 ck라는 함수호출하게해줘
+        css에서는 <link>라는 태그에 연결해줬으면 자바스크립트는 <script src="연결될주소">태그로 연결해줄거임
+    현업에서 99% 사용되는방법-->
+    <button onclick="ck()">외부방식</button>
+    
+</body>
+</html>

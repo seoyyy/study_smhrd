@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+    //1. 23,24,54, 78,12, 44가 담긴 배열 선언 & 생성
+    let numList = [23,24,54,78,12,44];
+
+    // 2. 비교할  maxNUm을 만들ㅇ준다. 
+
+    // let maxNum = 0;
+    // //let maxNum= list[0];
+    
+    // // 3. maxNum과 리스트의 값을 순서대로 비교후,
+    // //4. 최종적으로 가장 큰 수를 alert로 출력
+    // for(let i = 0; i<=numList.length; i++){
+    //     if(numList[i] > maxNum){
+    //         maxNum= numList[i]
+    //     }
+    // }
+//alert(maxNum);
+
+
+// case2
+let maxNum2 = Math.max.apply(null,numList);
+//Math.max.apply(null, 범위); 적어주면 그안에서 가장 큰값을 알아서 찾아주는 함수
+
+alert(maxNum2);
+
+</script>
+
+
+</body>
+</html>

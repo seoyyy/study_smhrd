@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // 1. 시작숫자, 마지막 숫자 입력받는다 ( prompt)
+        // 2. 시작 ~ 마지막 까지의 총합 출력 ( total변수, for문)
+        // 결과 : 1부터 10까지의 합은? 
+
+        //tip click 하고 같이 작업할부부 ㄴ또 alt 클릭하면 동시에 작성가능 
+
+        let start = parseInt(prompt('시작 숫자 입력하세요'));
+        let last = parseInt(prompt('마지막 숫자 입력하세요'));
+
+        let total = 0;
+
+        for( let i = start ; i <=last; i++){
+            total += i;
+        }1
+
+        console.log(start + '부터 '+ last +'까지의 합은?' + total);
+
+    </script>
+</body>
+</html>
