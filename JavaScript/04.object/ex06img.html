@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- over/out : 지정한 요소(자식요소 포함) -->
+    <!-- enter/ leave : 지정한 요소(자식요소 미포함) -->
+
+    <img src="./img/pingoo1.gif" onmouseover="chImg1()" onmouseout="chImg2()">
+
+    <script>
+        let img = document.getElementsByTagName("img");
+
+        console.log(img);
+
+        function chImg1(){
+            img[0].src = "./img/pingoo2.gif"
+        }
+        
+        function chImg2(){
+            img[0].setAttribute("src",'./img/pingoo1.gif')
+        }
+
+    </script>
+
+
+</body>
+</html>

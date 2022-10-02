@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type ="text" name="id">
+        <input type ="password" name = "pw">
+
+        <input type="checkbox" name="subject" value="자바">자바
+        <input type="checkbox" name="subject" value="안드">안드로이드
+        <input type="checkbox" name="subject" value="웹">웹
+
+
+        <input type="button" onclick = "getIdPw()" value="LOGIN">
+    </form>
+
+    <script>
+        function getIdPw(){
+            let id = document.getElementsByName("id");
+            let pw = document.getElementsByName("pw");
+
+            let subject = document.getElementsByName("subject");
+
+            console.log(subject)
+
+            for(var i=0; i<subject.length; i++){
+                if(subject[i].checked){  //어차피 선택이되면 true라서 true넣어줄필요없이 true일 경우 실행문 실행!
+                console.log(subject[i].value)     // checked : 선택한 경우(true) / 선택안한경우(false)
+                }
+            }
+
+
+
+
+
+            console.log(id)
+            
+            console.log(id[0].value)  //element로 되있는애들으 ㄴ상관없는데 elements로 되있는 애들은 배열로 값을 반환해서 인덱스 번호로 접근해줘야함.
+            console.log(pw[0].value)
+
+        }
+
+
+    </script>
+</body>
+</html>

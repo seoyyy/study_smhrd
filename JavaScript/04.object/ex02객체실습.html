@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let pocketMon1 = {
+            name : '피카츄',
+            age : 2,
+            skill : function(){ 
+                alert('백만볼트!✨');
+            }
+        };
+
+        let pocketMon2 = {
+            name : '꼬북이',
+            age : 1,
+            skill : function(){
+                console.log('물대포!🌊');
+            }
+
+        };
+
+        pocketMon1.skill();
+
+        document.write("첫번째 포켓몬 이름 : "+pocketMon1.name);
+        document.write('<br>');
+        document.write("첫번째 포켓몬 나이 : "+pocketMon1.age +'살' + '<br>');
+        document.write('<br>'); 
+        document.write('<br>');
+        document.write("두번째 포켓몬 이름 : "+pocketMon2.name);
+        document.write('<br>');
+        document.write("두번째 포켓몬 나이 : "+pocketMon2.age +'살');
+    
+
+        pocketMon2.skill();
+
+ 
+
+    </script>
+
+
+
+</body>
+</html>

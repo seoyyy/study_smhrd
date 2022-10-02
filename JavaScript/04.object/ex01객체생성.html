@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+    // 객체 (object) : 여러개의 데이터를 속성 & 값으로 구분해서 저장
+
+  // 함수 () 배열[] 객체 {}
+
+
+    // 객체 생성 case 1 
+  
+    // let pyo = {};
+
+    // pyo.name = '한서영';
+    // pyo.subject = 'web';
+    // pyo.loc = '캠퍼스';
+
+    // console.log(pyo);
+
+
+
+    // 객체 생성 case 2
+    let pyo = {
+        name : '한서영',
+        subject : 'web',
+        location : '캠퍼스',
+
+        intro : function(){      //객체안에 함수도 넣을 수 있음
+            alert('반갑습니다!!');
+        }
+    };
+    console.log(pyo.name);
+    pyo.intro();
+
+ 
+//객체는 키값으로 접근
+//객체는 인덱스가 아닌 속성이름을 이용해서 접근한다.
+//접근하는 방법은? 객체이름.속성이름   .(마침표)를이용!
+
+</script>
+
+
+</body>
+</html>
