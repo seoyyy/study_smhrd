@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>회원정보 수정 페이지</h1>
+<form action="updateCheck.jps" method="post">
+	ID<input type="text" name ="id"><br> <!-- 아이디를 입력하고 -->
+	<select name="select">	 <!-- 둘중 어떤값을 변경할건지 선택하고 -->
+		<option value="pw">PW</option>
+		<option value="nick">NICK</option>
+	</select>
+	<!-- 그래서 이 폼태그안에 이 내용이 도데체 어떤값으로 변경할건지  -->
+	변경할 DATA<input type="text" name = "data"> <!-- 어떤 값으로 변경할건지 -->
+	<input type = "submit" value="회원수정">
+</form>
+
+</body>
+</html>
