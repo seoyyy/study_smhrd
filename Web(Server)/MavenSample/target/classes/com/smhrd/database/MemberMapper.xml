@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        <!-- 아래에는 실행할 sql문 적어주기 -->
+  
+  
+ <!--  namespace : mapper태그 식별자(절대로 겹치면 안됨!)  : 보통 sql을 실행하는 클래스(DAO클래스) 경로를 적음-->
+       <mapper namespace="com.smhrd.domain.DAO">
+       
+       <!-- id : 각 태그를 식별해줄 키값 -->
+       <!-- parameterType : 매개변수자리 (무슨타입이 필요하다 같은걸 정의해주는자리 - jdbc클래스에서 확인가능) + 앞에 그 타입이있는 경로도 적어줘야함 -->
+       <!-- 회원가입 할때 사용 (sql에서 insert할게있으면 insert태그쓰면됨)-->
+       <insert id="insert" parameterType="com.smhrd.domain.Member">
+       		insert into member_web values (#{id}, #{pw}, #{nick})
+       
+       </insert>
+       
+       <!-- resultType(select할때만 들어감) : 읽어온 값을 어떤 타입으로 반환할건지(parameterType이랑 똑같이주면됨- com.smhrd.domain에서 Member로묶어서줘라) -->
+      <select id = "selectOne" resultType = "com.smhrd.domain.Member" parameterType="com.smhrd.domain.Member">
+      	
+      		select * from member_web where id=#{id} and pw=#{pw}
+      
+      </select> 
+       
+       
+       
+       
+       </mapper>
+        
