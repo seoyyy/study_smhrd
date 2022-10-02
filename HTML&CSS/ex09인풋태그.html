@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        form태그 
+    -사용자가 입력한 데이터를 묶어서 전달할 때 사용하는 태그 (서버에게 넘기는)
+    action > 데이터를 보낼 주소 입력(전달할 위치를 입력하는 속성)
+    method > get방식(검색한게 url에 노출되는)/ post방식(아이디비번같이 노출되면안되고 가려지는)
+    -->
+    <!--
+        input태그 
+        -사용자에게 다양한 입력창을 제공해주는 태그
+        -type 속성을 기준으로 형식을 지정
+        -★ name, value 속성을 꼭 이해하하기!  이게 왜필요한지 이해하기(개발자의 역할)
+    -->
+    
+    <form action = "#" method="get">
+        <!--일반 텍스트를 입력하는 창-->
+        이름 : <input type ="text" value="" name="이름">
+        <br>
+        나이 : <input type = "text" placeholder="나이를 입력하세요" value="" name="나이">
+        <br>
+        <!-- 비밀번호를 입력하는 창(암호화가되있는)-->
+        비밀번호 : <input type="password" name ="비밀번호" maxlength="5">
+        <br>
+
+        <!--체크박스(중복이되는 데이터) vs 라디오버튼(중복이안되는 데이터)-->
+        <!--
+            1.차이점 = 체크박스는 중복이 된다. 라디오버튼은 중복이 되지 않는다.
+            2. 중요한점 = value 꼭 지정, name 그룹화(라디오버튼에서 중복이 되지않게하는 중요한 요소임)
+        -->
+        축구 : <input type ="checkbox" value ="soccer" name="hobby"> 농구 : <input type ="checkbox" value="basketball" name="hobby">
+        <br>
+        남자 : <input type="radio" value = "남자" name = "gender">
+        여자 : <input type="radio" value = "여자" name = "gender">
+        <br>
+
+        <!--다양한 인풋창-->
+        <input type = "file">
+        <br>
+        <input type = "color">
+        <br>
+        <input type="number">
+        <br>
+        <input type="range">
+        <br>
+        <input type ="date"><input type="datetime-local">
+        <br>
+
+        <!-- select vs datalist -->
+        <select>
+            <option>메일선택</option>
+            <option value ="네이버">naver.com</option>
+            <option value = "다음">daum.net</option>
+        </select>
+
+        <input type ="text" list="singer">
+        <datalist id="singer">
+            <option>아이유</option>
+            <option>박재범</option>
+            <option>10cm</option>
+        </datalist>
+        <br>
+
+        <!-- 사용자가 댓글등과 같은 긴 텍스트를 입력하는 창-->
+        <textarea cols="50" rows="3"></textarea>
+        <br>
+        
+        <!-- 데이터를 서버에게 전송해주는 버튼-->
+        <input type="submit" value="제출하기">
+
+    </form>
+
+
+
+
+
+
+    
+</body>
+</html>

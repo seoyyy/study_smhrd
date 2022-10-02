@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        1.테이블의 구성요소 = 행, 열, 컬럼이름, 선의 종류/두께
+        2.테이블 태그 <table></table>
+        3.줄(행) <tr></tr>
+        4.칸(열) <td></td>
+        5.컬럼(제목) <th></th>
+
+        [속성]
+        1.가로길이를 지정할 때는 width
+        2.세로길이를 지정할 때는 height
+        3.표의 테두리를 지정할 때는 border = "굵기 종류 색상"
+            굵기 = 1px
+        4.가로방향의 셀을 병합 colspan = "크기"
+        5.세로방향의 셀을 병함 rowspan = "크기"
+        6.데이터를 정렬 align = "방향"
+
+    -->
+    <table border="1px solid black" width="300">
+        <tr bgcolor = "yellow">    
+            <th>
+                나이
+            </th>
+            <th colspan="2">
+                이름/성별
+            </th>
+            <th>
+                비고
+            </th>
+        </tr>
+        <tr align ="center">
+            <td>
+                17
+            </td>
+            <td>
+                정형
+            </td>
+            <td>
+                남자
+            </td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr align ="center">
+            <td>
+                20
+            </td>
+            <td>
+                김동원
+            </td>
+            <td>
+                남자
+            </td>
+            
+        </tr>
+       
+    </table>
+
+
+</body>
+</html>

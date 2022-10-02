@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* css를 작성하는 공간 (html과 언어가 다름 주석은 'ctrl+/')    */
+        /* 
+            사용자 : 정형 글자를 파란색으로 변경해줘 !
+            컴퓨터는 정형이라는 글자가 뭔지모름 알아먹을수있게 해석이 필요
+            해석: h1태그 안의 컨텐츠를 파란색으로 변경해줘! h1=>선택자
+
+            선택자에게는 우선순위가 있음. 명시도가 높을수록(특정태그를 명시할수록) 우선순위를 가지고있음. - id선택자가 명시도가 가장높음
+         */
+         
+         /* 
+         전체선택자 = 모든 요소들에게 동일한 스타일을 적용
+         선택자키워드 = *
+          */
+         *{
+             color : blue;
+         }
+         /* 
+         타입선택자 = 태그명을 작성해서 스타일을 적용하는 선택자
+         선택자 키워드 = 태그명
+         */
+         h1{
+             color : yellow;
+
+         }
+
+         /* 
+         id선택자 = 태그에게 특정 이름을 부여해서 사용하는 선택자
+         선택자키워드 = #
+         중요한점 = 한페이지에 한번 존재(아이디가 중복이 되지 않음)
+         */
+         #a{
+             color:green;
+         }
+
+         /* 
+        class선택자 = 태그에게 특정 이름을 부여해서 선택하는 선택자
+        선택자 키워드 = .
+        중요한점 = 한페이지에 여러번 존재 가능(중복가능). 가장많이쓰임
+         */
+         .b{
+             color : purple;
+         }
+
+         /* 
+            선택자의 우선순위
+            *(전체)  <  태그  < class < id
+         */
+    </style>
+
+</head>
+<body>
+
+   
+    <h1 id="a" >정형</h1>
+    <h1 class="b">임한결</h1>
+    <h1 class="b">임승환</h1>
+    <h1>김동원</h1>
+    <h1>김미희</h1>
+
+    <p>
+        <span>첫번째 스팬</span>
+        <span>두번째 스팬</span>
+    </p>
+
+
+    
+</body>
+</html>

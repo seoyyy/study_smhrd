@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+    div{
+        width: 150px;
+        height: 150px;
+    }
+
+    #div1{
+        background-color: coral;
+    }
+
+    #div2{
+        background-color: darkgray;
+        position: relative;   /*일단 속성을 바꿔준뒤   left는 왼쪽에서 오른쪽으로 이만큼이동해라 */
+        left: 150px;  
+    }
+
+    #div3{
+        background-color: darkslategrey;
+        position:relative;
+        left: 70px;
+        bottom: 70px;       /* top: -75px; 도 가능하긴함*/
+    }
+    /*
+        position = 원하는 위치에 요소를 배치할 때 사용되는 속성
+            static : 기본적으로 생성되는 위치값(기본값) --디폴드값으로 따로 지정할 필요없음
+            relative : 기본위치(기준으로)에서 이동을 시킬 때 사용되는 값
+            absolute : 절대위치(화면의 최상단 0,0)를 기준으로 이동시킬 때 사용되는 값
+            fixed : 고정값  ---> 웹툰에 리모컨처럼 스크롤을내려도 화면한쪽에 고정되어있는
+
+    */
+
+</style>
+
+</head>
+<body>
+    
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+
+
+
+</body>
+</html>

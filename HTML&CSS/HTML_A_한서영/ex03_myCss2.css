@@ -1,0 +1,41 @@
+#layout {
+    height: 500px;
+    width: 500px;
+}
+
+#header {
+    height: 10%;
+    width: 100%;
+    background-color: #EA4335;
+}
+
+#nav {
+    height: 10%;
+    width: 100%;
+    background-color: #FF5E00;
+}
+
+#side {
+    float: left;
+    height: 60%;
+    width: 30%;
+    background-color: #4385F4;
+}
+
+#section1 {
+    height: 30%;
+    width: 100%;
+    background-color: #34A853;
+}
+
+#section2 {
+    height: 30%;
+    width: 100%;
+    background-color: #FBBC05;
+}
+
+#footer {
+    height: 20%;
+    width: 100%;
+    background-color: #8A8d92;
+}
